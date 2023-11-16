@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>- Registro de Estudiante Carrera</title>
+  <!-- Enlaces a Bootstrap y jQuery -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+</head>
+
+<body>
+  <!-- Nav Menu Principal -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <img src="../Imagen/hibt.png" alt="Logo" width="100" height="80">
+      <a class="navbar-brand m-3" id="N" href="#">JQuery-Validation</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../Index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./acercade.html">Acerca de</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header><br><br><br><br>
+  <!-- Contenido del formulario -->
+  <div class="container mt-5 pt-5">
+    <form id="datosIngresoForm" action="#" method="post">
+      <h2 class="mb-4">Datos de Nuevo Ingreso</h2>
+
+      <!-- Contenido de la página Eleccioncarrrera.html -->
+      <div class="container mt-5">
+        <h2>Bienvenido</h2>
+        <!-- Mostrar Nombre y Apellido -->
+      </div>
+      <!-- Seleccionar Carrera -->
+      <div class="form-group">
+        <label for="carrera">Carrera:</label>
+        <select class="form-control" id="carrera" name="carrera" required>
+          <option value="">Seleccione...</option>
+          <option value="Ingeniería Civil">Tec. Ingeniería Civil</option>
+          <option value="Arquitectura">Tec. Arquitectura</option>
+          <option value="Química Industrial">Tec. Química Industrial</option>
+          <option value="Energía Renovable">Energía Renovable</option>
+          <option value="Hardware Computacional">Hardware Computacional</option>
+          <option value="Ingeniería Eléctrica">Ing. Eléctrica</option>
+          <option value="Ingeniería Electrónica">Ing. Electrónica</option>
+          <option value="Desarrollo de Software">Ing. Desarrollo de Software</option>
+          <option value="Ingeniería Mecatrónica">Ing. Mecatrónica</option>
+        </select>
+      </div>
+      <!-- CheckBox de Equivalencias -->
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="equivalencias" name="equivalencias">
+        <label class="form-check-label" for="equivalencias">Desea equivalencias?</label>
+      </div>
+      <!-- Seleccionar Turno -->
+      <div class="form-group">
+        <label for="turno">Turno:</label>
+        <select class="form-control" id="turno" name="turno" required>
+          <option value="">Seleccione...</option>
+          <option value="Diurna">Diurna</option>
+          <option value="Nocturna">Nocturna</option>
+        </select>
+      </div>
+
+      <!-- Botones -->
+      <button type="submit" class="btn btn-primary">Inscribir</button>
+      <button type="button" class="btn btn-secondary" id="btnCancelar" onclick="limpiarFormulario()">Cancelar</button>
+    </form>
+  </div>
+  <!-- Footer -->
+  <section>
+    <footer class="footer bg-dark text-light mt-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4">
+            <h5>Acerca de nosotros</h5>
+            <p>Universidad Ficticia Jquery</p>
+          </div>
+          <div class="col-lg-4">
+            <h5>Contacto</h5>
+            <ul class="list-unstyled">
+              <li>Dirección: Calle Ficticia #123, San Salvador, El Salvador</li>
+              <li>Teléfono: +503 1234-5678</li>
+              <li>Email: info@tealquilo.com</li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h5>Enlaces</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" style="color: #eee4e4;">Términos de uso</a></li>
+              <li><a href="#" style="color: #eaeaea;">Política de privacidad</a></li>
+              <li><a href="#" style="color: #eaeaea;">Preguntas frecuentes</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <p>&copy; 2023 Universidad Ficticia Jquery <br>Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!-- Enlaces a Bootstrap JavaScript y Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="../Js/validacionIndex.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../Js/Validacionalertas.js"></script>
+  <script src="../Js/validacionIndex.js"></script>
+</body>
+
+</html>

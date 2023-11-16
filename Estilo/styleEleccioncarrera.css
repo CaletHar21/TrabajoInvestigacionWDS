@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .container-content {
+    flex: 1;
+  }
+
+  section {
+    flex-shrink: 0;
+  }
+
+  .footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    bottom: 0;
+  }
